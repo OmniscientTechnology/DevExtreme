@@ -6,7 +6,7 @@ import gridCoreUtils from './ui.grid_core.utils';
 import filterUtils from '../shared/filtering';
 import customOperations from './ui.grid_core.filter_custom_operations';
 
-const FILTER_ROW_OPERATIONS = ['=', '<>', '<', '<=', '>', '>=', 'notcontains', 'contains', 'startswith', 'endswith', 'between'];
+const FILTER_ROW_OPERATIONS = ['=', '<>', '<', '<=', '>', '>=', 'notcontains', 'contains', 'startswith', 'endswith', 'between', 'isblank', 'isnotblank'];
 const FILTER_TYPES_INCLUDE = 'include';
 const FILTER_TYPES_EXCLUDE = 'exclude';
 

@@ -174,10 +174,10 @@ module.exports = {
                 showInColumnChooser: true
             };
             const DATATYPE_OPERATIONS = {
-                'number': ['=', '<>', '<', '>', '<=', '>=', 'between'],
-                'string': ['contains', 'notcontains', 'startswith', 'endswith', '=', '<>'],
-                'date': ['=', '<>', '<', '>', '<=', '>=', 'between'],
-                'datetime': ['=', '<>', '<', '>', '<=', '>=', 'between']
+                'number': ['=', '<>', '<', '>', '<=', '>=', 'between', 'isblank', 'isnotblank'],
+                'string': ['contains', 'notcontains', 'startswith', 'endswith', '=', '<>', 'isblank', 'isnotblank'],
+                'date': ['=', '<>', '<', '>', '<=', '>=', 'between', 'isblank', 'isnotblank'],
+                'datetime': ['=', '<>', '<', '>', '<=', '>=', 'between', 'isblank', 'isnotblank']
             };
             const COLUMN_INDEX_OPTIONS = {
                 visibleIndex: true,

@@ -24,7 +24,9 @@ const OPERATION_ICONS = {
     'contains': 'filter-operation-contains',
     'startswith': 'filter-operation-starts-with',
     'endswith': 'filter-operation-ends-with',
-    'between': 'filter-operation-between'
+    'between': 'filter-operation-between',
+    'isblank': 'filter-operation-isblank',
+    'isnotblank': 'filter-operation-isnotblank',
 };
 
 const OPERATION_DESCRIPTORS = {
@@ -38,7 +40,9 @@ const OPERATION_DESCRIPTORS = {
     'contains': 'contains',
     'notcontains': 'notContains',
     'endswith': 'endsWith',
-    'between': 'between'
+    'between': 'between',
+    'isblank': 'isBlank',
+    'isnotblank': 'isNotBlank',
 };
 
 const FILTERING_TIMEOUT = 700;
@@ -840,7 +844,17 @@ module.exports = {
                      * @default "Between"
                      */
                     between: messageLocalization.format('dxDataGrid-filterRowOperationBetween'),
+                    /**
+                     * @name GridBaseOptions.filterRow.operationDescriptions.isBlank
+                     * @type string
+                     * @default "IsBlank"
+                     */
                     isBlank: messageLocalization.format('dxFilterBuilder-filterOperationIsBlank'),
+                    /**
+                     * @name GridBaseOptions.filterRow.operationDescriptions.isNotBlank
+                     * @type string
+                     * @default "IsNotBlank"
+                     */
                     isNotBlank: messageLocalization.format('dxFilterBuilder-filterOperationIsNotBlank')
                 },
                 /**
